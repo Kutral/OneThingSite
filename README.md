@@ -1,91 +1,117 @@
-# OneThing Site
+<div align="center">
 
-The public launch surface for **OneThing**, Essara's local-first Android focus app.
+<img src="./public/assets/brain-dump-icon.webp" width="120" alt="OneThing Logo" />
 
-OneThing is for the moment when the list is too loud: brain dump the noise, choose one real task, break it into tiny next steps, then start a calmer focus session.
+# 🌌 OneThing Site
 
-## Public URLs
+**The public launch surface for OneThing, Essara's local-first Android focus app.**
 
-| Surface | URL |
-| --- | --- |
-| GitHub Pages home | `https://kutral.github.io/OneThingSite/` |
-| Privacy policy | `https://kutral.github.io/OneThingSite/privacy.html` |
-| Essara launch page | `https://essara.space/onething` |
-| Google Play listing | `https://play.google.com/store/apps/details?id=com.essara.onething` |
-| Repository | `https://github.com/Kutral/OneThingSite` |
+*When the list is too loud: brain dump the noise, choose one real task, break it into tiny next steps, then start a calmer focus session.*
 
-## What This Site Ships
+[![Website](https://img.shields.io/badge/Website-OneThing-black?style=for-the-badge&logo=googlechrome&logoColor=white)](https://kutral.github.io/OneThingSite/)
+[![Essara](https://img.shields.io/badge/Essara-Launch_Page-black?style=for-the-badge&logo=rocket&logoColor=white)](https://essara.space/onething)
+[![Google Play](https://img.shields.io/badge/Google_Play-Available_Now-black?style=for-the-badge&logo=googleplay&logoColor=white)](https://play.google.com/store/apps/details?id=com.essara.onething)
 
-- A cinematic React + Vite + TypeScript + Tailwind landing page.
-- A matching dark, warm-cream privacy policy page at `privacy.html`.
-- Downloaded local video and image assets under `public/assets/`.
-- SEO essentials: canonical tags, robots, sitemap, Open Graph, Twitter tags, app JSON-LD, and Google Search Console verification.
-- A footer link map across product, launch, trust, and build surfaces.
-- A GitHub Pages Actions workflow that builds `dist/` and deploys it.
+</div>
 
-## Design System
+---
 
-The visual system is dark, quiet, and cinematic:
+## ✨ Overview
 
-- True black page background.
-- Warm cream primary text: `#E1E0CC`.
-- Tailwind primary accent: `#DEDBC8`.
-- Almarai for the app UI and Instrument Serif italic for expressive emphasis.
-- Local MP4 hero media with subtle SVG noise overlays.
-- Framer Motion word reveals, card entrances, and scroll-linked text opacity.
+This repository holds the cinematic, high-performance landing page for the **OneThing** app. It's built to capture the calm, focused essence of the app through a dark, quiet visual language.
 
-## Local Development
+### 🚀 What This Site Ships
+
+- **Cinematic Landing Page:** Built with React + Vite + TypeScript + Tailwind CSS.
+- **Privacy Policy:** A matching dark, warm-cream page at `privacy.html`.
+- **Local Assets:** All media (videos and images) are served locally under `public/assets/` for maximum performance.
+- **SEO Optimized:** Canonical tags, robots.txt, sitemap, Open Graph, Twitter cards, app JSON-LD, and Google Search Console verification.
+- **Comprehensive Footer:** Link map spanning product, launch, trust, and build surfaces.
+- **Automated CI/CD:** GitHub Actions workflow builds the `dist/` folder and deploys it effortlessly to GitHub Pages.
+
+---
+
+## 🎨 Design System
+
+The visual system is intentionally **dark, quiet, and cinematic**.
+
+| Element | Description |
+| :--- | :--- |
+| **Background** | True black page background for deep contrast. |
+| **Primary Text** | Warm cream (`#E1E0CC`) for reduced eye strain. |
+| **Accent Color** | Tailwind primary accent (`#DEDBC8`). |
+| **Typography** | *Almarai* for the app UI, paired with *Instrument Serif* italic for expressive emphasis. |
+| **Media** | Local MP4 hero media with subtle SVG noise overlays. |
+| **Animation** | Framer Motion powers word reveals, card entrances, and scroll-linked text opacity. |
+
+---
+
+## 💻 Local Development
+
+Get up and running locally in seconds.
 
 ```bash
+# 1. Install dependencies
 npm install
+
+# 2. Start the development server
 npm run dev
 ```
 
-The local dev server opens at:
+The local dev server will be available at: [http://127.0.0.1:5173/](http://127.0.0.1:5173/)
 
-```text
-http://127.0.0.1:5173/
-```
+---
 
-## Production Build
+## 🏗️ Production Build
+
+To test the production build locally:
 
 ```bash
 npm run build
 ```
 
-Vite builds with the `/OneThingSite/` base path so the output works correctly on GitHub Pages.
+> **Note:** Vite is configured to build with the `/OneThingSite/` base path to ensure all assets route correctly on GitHub Pages.
 
-## Deployment
+---
 
-Deployment is handled by `.github/workflows/deploy.yml`.
+## 📦 Downloaded Assets
 
-On every push to `main`, GitHub Actions:
+All template assets are bundled locally. No external media dependencies are required during render.
 
-1. Installs dependencies with `npm ci`.
-2. Runs `npm run build`.
-3. Uploads `dist/` as the Pages artifact.
-4. Publishes it through GitHub Pages.
+| Local File | Source Role |
+| :--- | :--- |
+| 🎥 `onething-hero-cinematic.mp4` | Home and privacy hero background video |
+| 🎥 `onething-focus-canvas.mp4` | Feature video card background |
+| 🖼️ `brain-dump-icon.webp` | Brain Dump feature image |
+| 🖼️ `smart-breakdown-icon.webp` | Smart Breakdown feature image |
+| 🖼️ `focus-session-icon.webp` | Focus Session feature image |
 
-## Downloaded Assets
+---
 
-All supplied template assets were downloaded and saved locally so the site does not depend on remote media during render.
+## 🚀 Deployment
 
-| Local file | Source role |
-| --- | --- |
-| `public/assets/onething-hero-cinematic.mp4` | Home and privacy hero background video |
-| `public/assets/onething-focus-canvas.mp4` | Feature video card background |
-| `public/assets/brain-dump-icon.webp` | Brain Dump feature image |
-| `public/assets/smart-breakdown-icon.webp` | Smart Breakdown feature image |
-| `public/assets/focus-session-icon.webp` | Focus Session feature image |
+Deployment is fully automated via `.github/workflows/deploy.yml`.
 
-## Search Console
+On every push to the `main` branch, GitHub Actions:
+1. Installs dependencies (`npm ci`)
+2. Builds the project (`npm run build`)
+3. Uploads the `dist/` directory as a Pages artifact
+4. Publishes directly to GitHub Pages
 
-The homepage includes:
+---
 
-```html
-<meta name="google-site-verification" content="Tz3n94e3ORcERVuui1jckm4iOTUuqwOV_d4Sq-1WSCo" />
-```
+## 🔗 Public URLs
 
-## Privacy Page
+| Resource | URL |
+| :--- | :--- |
+| **GitHub Pages Home** | [kutral.github.io/OneThingSite](https://kutral.github.io/OneThingSite/) |
+| **Privacy Policy** | [privacy.html](https://kutral.github.io/OneThingSite/privacy.html) |
+| **Essara Launch Page** | [essara.space/onething](https://essara.space/onething) |
+| **Google Play Listing** | [com.essara.onething](https://play.google.com/store/apps/details?id=com.essara.onething) |
+| **Repository** | [Kutral/OneThingSite](https://github.com/Kutral/OneThingSite) |
 
-`privacy.html` is intentionally standalone, crawlable, and Play Store friendly. It mirrors the home page's dark cinematic theme while keeping the policy text direct and readable.
+---
+
+<div align="center">
+<i>Built with focus, for focus.</i>
+</div>
