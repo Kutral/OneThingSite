@@ -2,15 +2,21 @@
 
 <img src="./public/assets/brain-dump-icon.webp" width="120" alt="OneThing Logo" />
 
-# 🌌 OneThing Site
+# 🌌 OneThing
 
-**The public launch surface for OneThing, Essara's local-first Android focus app.**
+**The local-first Android focus app by Essara.**
 
 *When the list is too loud: brain dump the noise, choose one real task, break it into tiny next steps, then start a calmer focus session.*
 
-[![Website](https://img.shields.io/badge/Website-OneThing-black?style=for-the-badge&logo=googlechrome&logoColor=white)](https://kutral.github.io/OneThingSite/)
-[![Essara](https://img.shields.io/badge/Essara-Launch_Page-black?style=for-the-badge&logo=rocket&logoColor=white)](https://essara.space/onething)
-[![Google Play](https://img.shields.io/badge/Google_Play-Available_Now-black?style=for-the-badge&logo=googleplay&logoColor=white)](https://play.google.com/store/apps/details?id=com.essara.onething)
+<br/>
+
+<a href="https://play.google.com/store/apps/details?id=com.essara.onething">
+  <img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" height="80"/>
+</a>
+
+<br/>
+
+**[🌐 Visit the Official Website](https://kutral.github.io/OneThingSite/)** &nbsp;&nbsp;•&nbsp;&nbsp; **[🚀 Essara Launch Page](https://essara.space/onething)** &nbsp;&nbsp;•&nbsp;&nbsp; **[🔒 Privacy Policy](https://kutral.github.io/OneThingSite/privacy.html)**
 
 </div>
 
@@ -18,7 +24,7 @@
 
 ## ✨ Overview
 
-This repository holds the cinematic, high-performance landing page for the **OneThing** app. It's built to capture the calm, focused essence of the app through a dark, quiet visual language.
+This repository holds the cinematic, high-performance landing page for the **OneThing** app. It serves as the primary gateway for users to discover the app and download it directly from the Google Play Store.
 
 ### 🚀 What This Site Ships
 
@@ -26,7 +32,6 @@ This repository holds the cinematic, high-performance landing page for the **One
 - **Privacy Policy:** A matching dark, warm-cream page at `privacy.html`.
 - **Local Assets:** All media (videos and images) are served locally under `public/assets/` for maximum performance.
 - **SEO Optimized:** Canonical tags, robots.txt, sitemap, Open Graph, Twitter cards, app JSON-LD, and Google Search Console verification.
-- **Comprehensive Footer:** Link map spanning product, launch, trust, and build surfaces.
 - **Automated CI/CD:** GitHub Actions workflow builds the `dist/` folder and deploys it effortlessly to GitHub Pages.
 
 ---
@@ -97,18 +102,6 @@ On every push to the `main` branch, GitHub Actions:
 2. Builds the project (`npm run build`)
 3. Uploads the `dist/` directory as a Pages artifact
 4. Publishes directly to GitHub Pages
-
----
-
-## 🔗 Public URLs
-
-| Resource | URL |
-| :--- | :--- |
-| **GitHub Pages Home** | [kutral.github.io/OneThingSite](https://kutral.github.io/OneThingSite/) |
-| **Privacy Policy** | [privacy.html](https://kutral.github.io/OneThingSite/privacy.html) |
-| **Essara Launch Page** | [essara.space/onething](https://essara.space/onething) |
-| **Google Play Listing** | [com.essara.onething](https://play.google.com/store/apps/details?id=com.essara.onething) |
-| **Repository** | [Kutral/OneThingSite](https://github.com/Kutral/OneThingSite) |
 
 ---
 
